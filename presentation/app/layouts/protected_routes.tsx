@@ -44,7 +44,8 @@ export default function ProtectedRoutesLayout({ loaderData }: Route.ComponentPro
                 <Link 
                     to="/recipes/search/external/"
                     className="rounded border px-4 py-2 text-sm font-medium hover:bg-accent"
-                    >Browse Recipes
+                >
+                    Browse Recipes
                 </Link>
 
                 <Link
@@ -55,10 +56,17 @@ export default function ProtectedRoutesLayout({ loaderData }: Route.ComponentPro
                 </Link>
 
                 <Link
-                to="/calendar"
-                className="rounded border px-4 py-2 text-sm font-medium hover:bg-accent"
+                    to="/friends"
+                    className="rounded border px-4 py-2 text-sm font-medium hover:bg-accent"
                 >
-                Open Calendar
+                    Friends
+                </Link>
+
+                <Link
+                    to="/calendar"
+                    className="rounded border px-4 py-2 text-sm font-medium hover:bg-accent"
+                >
+                    Open Calendar
                 </Link>
 
                 <Link
@@ -78,7 +86,3 @@ export default function ProtectedRoutesLayout({ loaderData }: Route.ComponentPro
         </>
     );
 }
-
-// function ProtectedRouteProvider({ children }: { children: React.ReactNode }) {
-//     return <div> {children} </div>
-// }
